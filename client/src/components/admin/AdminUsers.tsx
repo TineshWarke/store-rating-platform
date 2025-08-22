@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Search, Plus, Eye, Filter, ChevronUp, ChevronDown } from 'lucide-react';
+import { Search, Plus, Eye, ChevronUp, ChevronDown } from 'lucide-react';
 import { usersAPI } from '../../services/api';
 import type { User, PaginationInfo } from '../../types';
 import LoadingSpinner from '../common/LoadingSpinner';
