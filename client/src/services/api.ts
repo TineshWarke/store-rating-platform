@@ -1,7 +1,8 @@
 import axios from 'axios';
 import type { AuthUser, LoginCredentials, RegisterData, User, Store, Rating, DashboardStats } from '../types';
 
-const API_BASE_URL = 'http://localhost:5000/api';
+// const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://store-rating-platform-sigma.vercel.app/';
 
 const api = axios.create({
     baseURL: API_BASE_URL,
