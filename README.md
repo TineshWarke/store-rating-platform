@@ -89,4 +89,4 @@ Backend runs on `http://localhost:5000`
 
 ---
 
-**Live Demo**: 
+**Live Demo**: `https://store-rating-platform-1wxo.vercel.app/admin/dashboard`
