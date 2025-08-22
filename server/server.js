@@ -14,11 +14,17 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",      
+    "https://store-rating-platform-1wxo.vercel.app" 
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 // MongoDB connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb: //localhost:27017/store-rating-app', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://Tinesh:DynaMight@cluster0.aoa4yrm.mongodb.net/', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
